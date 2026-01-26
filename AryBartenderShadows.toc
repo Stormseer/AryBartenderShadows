@@ -4,7 +4,7 @@
 ## Version: 0.1
 ## Notes: Forces Desaturation and Cooldown Numbers on Action Bars
 ## Category: Ary's Personals
-## IconTexture: Interface/AddOns/BartenderShadows/arys-intellect
+## IconTexture: Interface/AddOns/AryBartenderShadows/arys-intellect
 
 LibStub/LibStub.lua
 LibActionButton-1.0/LibActionButton-1.0.lua
