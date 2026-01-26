@@ -64,4 +64,9 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript("OnEvent", function(self)
   C_Timer.After(3, HookLibActionButton)
   self:UnregisterEvent("PLAYER_ENTERING_WORLD")
+
+  local count = _G["BT4Button172Count"]
+  if count then
+      count:SetAlpha(0)
+  end
 end)
