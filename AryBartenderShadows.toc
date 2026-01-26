@@ -1,0 +1,11 @@
+## Interface: 120000
+## Title: Bartender Shadows
+## Author: Aryella
+## Version: 0.1
+## Notes: Forces Desaturation and Cooldown Numbers on Action Bars
+## Category: Ary's Personals
+## IconTexture: Interface/AddOns/BartenderShadows/arys-intellect
+
+LibStub/LibStub.lua
+LibActionButton-1.0/LibActionButton-1.0.lua
+BartenderShadows.lua
