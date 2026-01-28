@@ -19,6 +19,13 @@ local function forceCooldownVisuals(cooldownFrame)
   end
 end
 
+local function HideButtonCount(buttonID)
+    local count = _G["BT4Button" .. buttonID .. "Count"]
+    if count then
+        count:SetAlpha(0)
+    end
+end
+
 local function updateCooldown(button)
   local duration
 
@@ -65,8 +72,8 @@ f:SetScript("OnEvent", function(self)
   C_Timer.After(3, HookLibActionButton)
   self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 
-  local count = _G["BT4Button172Count"]
-  if count then
-      count:SetAlpha(0)
-  end
+  HideButtonCount(173)
+  HideButtonCount(172)
+  HideButtonCount(170)
+
 end)
