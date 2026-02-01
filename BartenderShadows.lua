@@ -58,6 +58,8 @@ local function HookLibActionButton()
       hooksecurefunc(button, 'UpdateAction', updateCooldown)
       button.cooldown:HookScript('OnCooldownDone', GenerateClosure(updateCooldown, button))
       EventRegistry:RegisterFrameEventAndCallback('SPELL_UPDATE_COOLDOWN', GenerateClosure(updateCooldown, button))
+      EventRegistry:RegisterFrameEventAndCallback('SPELL_UPDATE_USABLE', GenerateClosure(updateCooldown, button)) -- Check if this is necessary for BT4
+      EventRegistry:RegisterFrameEventAndCallback('ACTIONBAR_UPDATE_USABLE', GenerateClosure(updateCooldown, button)) -- Check if this is necessary for BT4
 
       forceCooldownVisuals(button.cooldown)
       forceCooldownVisuals(button.chargeCooldown)
